@@ -50,7 +50,7 @@ public class MakeExcel {
             OutputStream os = response.getOutputStream();
             resultWorkbook.write(os);
             
-        } catch (ParsePropertyException | InvalidFormatException | IOException ex) {
+        } catch (IOException ex) {
             LOGGER.error("MakeExcel");
         }
     }
