@@ -39,6 +39,7 @@ public class MakeExcel {
      * Make Excel & Download. 
      */
     
+    /**
     public void download(HttpServletRequest request, HttpServletResponse response, Map<String , Object> beans, String filename, String templateFile) {
         String tempPath = request.getSession().getServletContext().getRealPath("/WEB-INF/templete") ;
         
@@ -54,4 +55,5 @@ public class MakeExcel {
             LOGGER.error("MakeExcel");
         }
     }
+    */
 }
