@@ -169,9 +169,6 @@
           <source>1.7</source>
           <target>1.7</target>
           <encoding>UTF-8</encoding>
-  <processTypes>
-     <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
-  </processTypes>
         </configuration>
       </plugin>
 	    <plugin>
