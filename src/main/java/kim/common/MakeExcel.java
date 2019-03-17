@@ -39,8 +39,7 @@ public class MakeExcel {
      * Make Excel & Download. 
      */
     
-    /**
-    public void download(HttpServletRequest request, HttpServletResponse response, Map<String , Object> beans, String filename, String templateFile) {
+   public void download(HttpServletRequest request, HttpServletResponse response, Map<String , Object> beans, String filename, String templateFile) {
         String tempPath = request.getSession().getServletContext().getRealPath("/WEB-INF/templete") ;
         
         try { 
@@ -51,9 +50,8 @@ public class MakeExcel {
             OutputStream os = response.getOutputStream();
             resultWorkbook.write(os);
             
-        } catch (IOException ex) {
+        } catch (ParsePropertyException | InvalidFormatException | IOException ex) {
             LOGGER.error("MakeExcel");
         }
     }
-    */
 }
